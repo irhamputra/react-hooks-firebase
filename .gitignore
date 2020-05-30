@@ -4,3 +4,8 @@ node_modules
 .cache
 dist
 !/example/
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/useFirebase.iml
+/.idea/vcs.xml

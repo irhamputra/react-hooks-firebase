@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "use-firebase",
+  "name": "react-hooks-firebase",
   "author": "Muhamad Irham Prasetyo",
   "module": "dist/usefirebase.esm.js",
   "devDependencies": {
