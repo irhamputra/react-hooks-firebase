@@ -2,6 +2,8 @@
 
 A Custom React Hooks for Firebase 🔥
 
+[check npm package size](https://bundlephobia.com/result?p=react-hooks-firebase@1.0.0)
+
 ### Motivation
 
 I love Firebase so much and I used it for my playground to build a Web app or Mobile app.
