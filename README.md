@@ -1,6 +1,6 @@
-## React-hooks-firebase
+# React-hooks-firebase
 
-experimental of react hooks for firebase.
+A Custom React Hooks for Firebase 🔥
 
 ### Motivation
 
@@ -16,7 +16,7 @@ npm i --save react-hook-firebase or yarn add react-hook-firebase
 ### Usage
 
 ```tsx
-import { useFirebase } from 'react-hook-firebase';
+import { useFirebase } from 'react-hooks-firebase';
 
 const Component = () => {
     const { auth, database, storage } = useFirebase(config, options)
