@@ -15,15 +15,9 @@ interface Config {
   appId: string;
 }
 
-interface Options {
-  enableMessaging?: boolean;
-  enablePerformance?: boolean;
-  enableAnalytics?: boolean;
-}
-
 export type FirebaseConfig = Required<Config>;
 
-export const useFirebase = (config: FirebaseConfig, options: Options = {}) => {
+export const useFirebase = (config: FirebaseConfig) => {
   !firebase.apps.length
     ? firebase.initializeApp({ ...config })
     : firebase.app();
@@ -33,8 +27,6 @@ export const useFirebase = (config: FirebaseConfig, options: Options = {}) => {
     storage: firebase.storage(),
     firestore: firebase.firestore(),
     database: firebase.database(),
-    messaging: options.enableMessaging && firebase.messaging(),
-    analytics: options.enableAnalytics && firebase.analytics(),
-    performance: options.enablePerformance && firebase.performance(),
+    messaging: firebase.messaging(),
   };
 };

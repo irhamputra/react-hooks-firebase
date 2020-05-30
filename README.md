@@ -2,7 +2,10 @@
 
 A Custom React Hooks for Firebase 🔥
 
-[check npm package size](https://bundlephobia.com/result?p=react-hooks-firebase@1.0.0)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-hooks-firebase)
+![npm](https://img.shields.io/npm/v/react-hooks-firebase)
+![GitHub last commit](https://img.shields.io/github/last-commit/irhamputra/react-hooks-firebase)
+![David](https://img.shields.io/david/irhamputra/react-hooks-firebase)
 
 ### Motivation
 
@@ -19,6 +22,10 @@ npm i --save react-hooks-firebase
 
 ```tsx
 import { useFirebase } from 'react-hooks-firebase';
+
+const config = {
+    // your firebase project config
+}
 
 const Component = () => {
   const { auth, database, storage } = useFirebase(config, options);
